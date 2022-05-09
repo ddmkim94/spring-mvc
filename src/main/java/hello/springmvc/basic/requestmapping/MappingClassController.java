@@ -13,11 +13,19 @@ public class MappingClassController {
 
     @PostMapping
     public String addUser() {
+<<<<<<< HEAD
         return "post user";
     }
 
     @GetMapping("/{userId}")
     public String findUser(@PathVariable String userId) {
+=======
+        return "post users";
+    }
+
+    @GetMapping("/{userId}")
+    public String getUser(@PathVariable("userId") String userId) {
+>>>>>>> ohvely22
         return "get userId=" + userId;
     }
 
@@ -27,7 +35,15 @@ public class MappingClassController {
     }
 
     @DeleteMapping("/{userId}")
+<<<<<<< HEAD
     public String deleteUser(@PathVariable String userId) {
         return "delete userId=" + userId;
     }
+=======
+    public String deleteUser(@PathVariable("userId") String userId) {
+        return "delete userId=" + userId;
+    }
+
+
+>>>>>>> ohvely22
 }
